@@ -10,7 +10,7 @@ post_template = env.get_template('post.html')
 index_template = env.get_template('index.html')
 
 
-BUILD_DIR = 'docs'
+BUILD_DIR = 'build'
 
 def render_template(template, **kwargs):
     base_html_start = template.render(kwargs, content="", title="Blog")
